@@ -27,4 +27,3 @@ class OrderLine:
         self.quantity=quantity
         self.price=price
         self.subtotal=self.quantity*self.price
-9

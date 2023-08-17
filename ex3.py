@@ -58,7 +58,7 @@ p1.stock_at_location = {
 p2 = Product("sports","002")
 p2.stock_at_location = {
     "Warehouse A":0,
-    "Warehouse B":12,
+    "Warehouse B":20,
     "Warehouse C":0,
     "Warehouse D":0
 }
@@ -74,11 +74,11 @@ p4.stock_at_location = {
     "Warehouse A":0,
     "Warehouse B":0,
     "Warehouse C":0,
-    "Warehouse D":10
+    "Warehouse D":50
 }
 p5 = Product("Electronics","005")
 p5.stock_at_location ={
-    "Warehouse A":20,
+    "Warehouse A":30,
     "Warehouse B":0,
     "Warehouse C":0,
     "Warehouse D":0
@@ -112,3 +112,4 @@ Product.printProduct()
 print("\n")
 
 Product.GroupBy()
+
