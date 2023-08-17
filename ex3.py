@@ -21,6 +21,7 @@ class Movement:
                 print("\n")
                 print(f"{product.name} moved from {m.from_location} to {m.to_location} with quantity {m.quantity}")
                 print("\n")
+                return product.name , "moved from", m.from_location ,"to", m.to_location ,"with quantity", m.quantity
             
 class Product:
     def __init__(self,name,code):
