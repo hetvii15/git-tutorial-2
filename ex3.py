@@ -19,9 +19,9 @@ class Movement:
                 product.stock_at_location[m.from_location] -= m.quantity
                 product.stock_at_location[m.to_location] += m.quantity
                 print("\n")
-                print(f"{product.name} moved from {m.from_location} to {m.to_location} with quantity {m.quantity}")
+                print(f"{product.name} moved from {m.from_location} to {m.to_location} with quantity {m.quantity}",file=f)
                 print("\n")
-                return product.name , "moved from", m.from_location ,"to", m.to_location ,"with quantity", m.quantity
+                # return product.name , "moved from", m.from_location ,"to", m.to_location ,"with quantity", m.quantity
             
 class Product:
     def __init__(self,name,code):
@@ -96,6 +96,9 @@ m5 = Movement("Warehouse A","Warehouse C", p5,10 )
 m6 = Movement("Warehouse B","Warehouse D", p1,12)
 
 movements =[m1,m2,m3,m4,m5,m6]
+
+# file creation
+f = open("output.txt","w")
 
 print("Movement of Toys:")
 Movement.movement_by_product(p1)
