@@ -1,3 +1,4 @@
+import re
 class Customer:
     def __init__(self, name, email, phone, street, city, state, country, company, type):
         self.name = name
@@ -28,8 +29,14 @@ class Customer:
         if not isinstance(company,Customer):
             raise ValueError("company must be customer object")
         
-
-
+        if not re.match("(0|91)?[6-9][0-9]{9}",phone):
+            raise ValueError("invalid phone number")
+        
+        if not re.match("[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,7}"):
+            raise ValueError("invalid email")
+    
+    def Cust_info(self):
+        print(f"Name:{self.name} Email:{self.email} Phone:{self.phone} Street:{self.street} City:{self.city} State:{self.state} Country:{self.country} Company:{self.company} Type:{self.type}")
 class Order:
     def __init__(self,number,date,company,billing,shipping,total_amount):
         self.number=number
@@ -50,7 +57,6 @@ class OrderLine:
 
 
 # c1 = Customer("ria","ria@gmail.com","9800980098","powder gali","mumbai","maharashtra","india","billing")
-
 
 
 
