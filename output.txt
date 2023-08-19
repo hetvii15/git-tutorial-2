@@ -1,0 +1,6 @@
+Toys moved from Warehouse A to Warehouse B with quantity 6
+Toys moved from Warehouse B to Warehouse D with quantity 12
+sports moved from Warehouse B to Warehouse C with quantity 8
+Clothes moved from Warehouse C to Warehouse D with quantity 9
+Footwear moved from Warehouse D to Warehouse A with quantity 7
+Electronics moved from Warehouse A to Warehouse C with quantity 10

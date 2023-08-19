@@ -37,6 +37,7 @@ class Customer:
     
     def Cust_info(self):
         print(f"Name:{self.name} Email:{self.email} Phone:{self.phone} Street:{self.street} City:{self.city} State:{self.state} Country:{self.country} Company:{self.company} Type:{self.type}")
+
 class Order:
     def __init__(self,number,date,company,billing,shipping,total_amount):
         self.number=number
@@ -46,6 +47,9 @@ class Order:
         self.shipping=shipping
         self.total_amount=total_amount
         self.order_lines=[]
+
+    def order_info(self):
+        print(f"Order number:{self.number} Date:{self.date} Company:{self.company} Billing:{self.billing} Shipping:{self.shipping} Total amount:{self.total_amount}")
 
 class OrderLine:
     def __init__(self,order,product,quantity,price):
